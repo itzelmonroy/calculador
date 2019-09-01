@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pantalla = new System.Windows.Forms.TextBox();
             this.txtboton7 = new System.Windows.Forms.Button();
             this.txtboton8 = new System.Windows.Forms.Button();
             this.txtboton9 = new System.Windows.Forms.Button();
@@ -50,14 +50,14 @@
             this.txtporciernto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // pantalla
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox1.Location = new System.Drawing.Point(130, 57);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(512, 64);
-            this.textBox1.TabIndex = 0;
+            this.pantalla.BackColor = System.Drawing.SystemColors.Info;
+            this.pantalla.Location = new System.Drawing.Point(130, 57);
+            this.pantalla.Multiline = true;
+            this.pantalla.Name = "pantalla";
+            this.pantalla.Size = new System.Drawing.Size(512, 64);
+            this.pantalla.TabIndex = 0;
             // 
             // txtboton7
             // 
@@ -68,6 +68,7 @@
             this.txtboton7.TabIndex = 1;
             this.txtboton7.Text = "7";
             this.txtboton7.UseVisualStyleBackColor = true;
+            this.txtboton7.Click += new System.EventHandler(this.Txtboton7_Click);
             // 
             // txtboton8
             // 
@@ -78,6 +79,7 @@
             this.txtboton8.TabIndex = 2;
             this.txtboton8.Text = "8";
             this.txtboton8.UseVisualStyleBackColor = true;
+            this.txtboton8.Click += new System.EventHandler(this.Txtboton8_Click);
             // 
             // txtboton9
             // 
@@ -88,6 +90,7 @@
             this.txtboton9.TabIndex = 3;
             this.txtboton9.Text = "9";
             this.txtboton9.UseVisualStyleBackColor = true;
+            this.txtboton9.Click += new System.EventHandler(this.Txtboton9_Click);
             // 
             // txtboton4
             // 
@@ -98,6 +101,7 @@
             this.txtboton4.TabIndex = 4;
             this.txtboton4.Text = "4";
             this.txtboton4.UseVisualStyleBackColor = true;
+            this.txtboton4.Click += new System.EventHandler(this.Txtboton4_Click);
             // 
             // txtboton5
             // 
@@ -108,6 +112,7 @@
             this.txtboton5.TabIndex = 5;
             this.txtboton5.Text = "5";
             this.txtboton5.UseVisualStyleBackColor = true;
+            this.txtboton5.Click += new System.EventHandler(this.Txtboton5_Click);
             // 
             // txtboton6
             // 
@@ -118,6 +123,7 @@
             this.txtboton6.TabIndex = 6;
             this.txtboton6.Text = "6";
             this.txtboton6.UseVisualStyleBackColor = true;
+            this.txtboton6.Click += new System.EventHandler(this.Txtboton6_Click);
             // 
             // txtboton1
             // 
@@ -128,6 +134,7 @@
             this.txtboton1.TabIndex = 7;
             this.txtboton1.Text = "1";
             this.txtboton1.UseVisualStyleBackColor = true;
+            this.txtboton1.Click += new System.EventHandler(this.Txtboton1_Click);
             // 
             // txtboton2
             // 
@@ -138,6 +145,7 @@
             this.txtboton2.TabIndex = 8;
             this.txtboton2.Text = "2";
             this.txtboton2.UseVisualStyleBackColor = true;
+            this.txtboton2.Click += new System.EventHandler(this.Txtboton2_Click);
             // 
             // txtboton3
             // 
@@ -148,6 +156,7 @@
             this.txtboton3.TabIndex = 9;
             this.txtboton3.Text = "3";
             this.txtboton3.UseVisualStyleBackColor = true;
+            this.txtboton3.Click += new System.EventHandler(this.Txtboton3_Click);
             // 
             // txtbotonde0
             // 
@@ -158,6 +167,7 @@
             this.txtbotonde0.TabIndex = 10;
             this.txtbotonde0.Text = "0";
             this.txtbotonde0.UseVisualStyleBackColor = true;
+            this.txtbotonde0.Click += new System.EventHandler(this.Txtbotonde0_Click);
             // 
             // txtdeunpunto
             // 
@@ -168,6 +178,7 @@
             this.txtdeunpunto.TabIndex = 11;
             this.txtdeunpunto.Text = ".";
             this.txtdeunpunto.UseVisualStyleBackColor = true;
+            this.txtdeunpunto.Click += new System.EventHandler(this.Txtdeunpunto_Click);
             // 
             // txtesc
             // 
@@ -178,6 +189,7 @@
             this.txtesc.TabIndex = 12;
             this.txtesc.Text = "C";
             this.txtesc.UseVisualStyleBackColor = true;
+            this.txtesc.Click += new System.EventHandler(this.Txtesc_Click);
             // 
             // txtesce
             // 
@@ -188,6 +200,7 @@
             this.txtesce.TabIndex = 13;
             this.txtesce.Text = "CE";
             this.txtesce.UseVisualStyleBackColor = true;
+            this.txtesce.Click += new System.EventHandler(this.Txtesce_Click);
             // 
             // txtdiagonal
             // 
@@ -198,6 +211,7 @@
             this.txtdiagonal.TabIndex = 14;
             this.txtdiagonal.Text = "/";
             this.txtdiagonal.UseVisualStyleBackColor = true;
+            this.txtdiagonal.Click += new System.EventHandler(this.Txtdiagonal_Click);
             // 
             // txtmenos
             // 
@@ -208,6 +222,7 @@
             this.txtmenos.TabIndex = 15;
             this.txtmenos.Text = "-";
             this.txtmenos.UseVisualStyleBackColor = true;
+            this.txtmenos.Click += new System.EventHandler(this.Txtmenos_Click);
             // 
             // txtpor
             // 
@@ -218,6 +233,7 @@
             this.txtpor.TabIndex = 16;
             this.txtpor.Text = "X";
             this.txtpor.UseVisualStyleBackColor = true;
+            this.txtpor.Click += new System.EventHandler(this.Txtpor_Click);
             // 
             // txtmas
             // 
@@ -228,6 +244,7 @@
             this.txtmas.TabIndex = 17;
             this.txtmas.Text = "+";
             this.txtmas.UseVisualStyleBackColor = true;
+            this.txtmas.Click += new System.EventHandler(this.Txtmas_Click);
             // 
             // txtigual
             // 
@@ -238,6 +255,7 @@
             this.txtigual.TabIndex = 18;
             this.txtigual.Text = "=";
             this.txtigual.UseVisualStyleBackColor = true;
+            this.txtigual.Click += new System.EventHandler(this.Txtigual_Click);
             // 
             // txtporciernto
             // 
@@ -248,6 +266,7 @@
             this.txtporciernto.TabIndex = 19;
             this.txtporciernto.Text = "%";
             this.txtporciernto.UseVisualStyleBackColor = true;
+            this.txtporciernto.Click += new System.EventHandler(this.Txtporciernto_Click);
             // 
             // calculadora
             // 
@@ -273,9 +292,10 @@
             this.Controls.Add(this.txtboton9);
             this.Controls.Add(this.txtboton8);
             this.Controls.Add(this.txtboton7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pantalla);
             this.Name = "calculadora";
             this.Text = "calculadora";
+            this.Load += new System.EventHandler(this.Calculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,7 +303,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox pantalla;
         private System.Windows.Forms.Button txtboton7;
         private System.Windows.Forms.Button txtboton8;
         private System.Windows.Forms.Button txtboton9;
